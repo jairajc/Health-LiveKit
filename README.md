@@ -35,7 +35,7 @@ uv run src/agent.py console
 
 ## Testing
 
-⚠️ **Aetna only** (Trading Partner ID: 60054)
+**Aetna only** For now (Trading Partner ID: 60054)
 
 Test with:
 - **Name:** Jane Doe
@@ -54,21 +54,17 @@ The challenge requested **Workflow Nodes**, but I have used **Agent + Function T
 CollectName → CollectMemberID → RunStediQuery → CheckValid →
 CheckActive → CheckCopay → RespondInNetwork/RespondOutNetwork
 ```
-~600 lines, rigid state machine, complex error handling
 
 **Our Agent + Tools Approach:**
 ```
 Agent (GPT-4o) → Decides which tool to call → Tools execute → Agent responds
 ```
-~300 lines, natural conversation, LLM handles flow
 
 ### Benefits
 
 1. **Natural conversation** - LLM manages state, handles corrections
-2. **50% less code** - No state machine boilerplate
-3. **Better UX** - Flexible, context-aware responses
-4. **Faster iteration** - Change flow via prompt, not code
-5. **Self-healing** - LLM handles unexpected inputs
+2. **Faster iteration** - Change flow via prompt, not code
+3. **Self-healing** - LLM handles unexpected inputs
 
 ### Tools
 
@@ -89,7 +85,7 @@ LLM orchestrates when to call these based on conversation context.
 
 **Agent + Tools better for:** Natural conversation, voice assistants, rapid development
 
-We chose Agent + Tools for better voice UX and simpler code.
+I chose Agent + Tools for better voice UX and simpler code.
 
 ## Structure
 
