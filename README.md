@@ -45,6 +45,8 @@ System auto-converts to `AETNA12345` for API compatibility.
 
 ## Architecture: Agent + Tools (Not Workflows)
 
+![System Flow Diagram](Agent_Flow.png)
+
 ### Why We Chose This
 
 The challenge requested **Workflow Nodes**, but I have used **Agent + Function Tools** instead.
